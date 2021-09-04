@@ -1,0 +1,21 @@
+# Buka alacritty error
+
+```bash
+❯ alacritty
+Created log file at "/tmp/Alacritty-1202332.log"
+[2021-08-29 13:25:25.648499167] [ERROR] [alacritty] Alacritty encountered an unrecoverable error:
+
+                                                        There was an error initializing the shaders: Failed compiling shader: 0:1(10): error: GLSL 3.30 is not supported. Supported versions are: 1.10, 1.20, and 1.00 ES
+
+```
+
+Solusi :
+
+export environment variable di .zshrc
+atau di .profile
+```bash
+export LIBGL_ALWAYS_SOFTWARE=1 alacritty
+```
+
+
+

@@ -1,0 +1,289 @@
+
+## Output 1
+```bash
+❯ sudo dmesg| grep usb
+[sudo] password for dar729:
+[    0.497205 ] usbcore: registered new interface driver usbfs
+[    0.497205 ] usbcore: registered new interface driver hub
+[    0.497205 ] usbcore: registered new device driver usb
+[    0.666965 ] pci 0000:00:1a.7: quirk_usb_early_handoff+0x0/0x720 took 14131 usecs
+[    0.683624 ] pci 0000:00:1d.7: quirk_usb_early_handoff+0x0/0x720 took 14696 usecs
+[    0.926169 ] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    0.926172 ] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.926174 ] usb usb1: Product: EHCI Host Controller
+[    0.926176 ] usb usb1: Manufacturer: Linux 5.10.56-1-MANJARO ehci_hcd
+[    0.926177 ] usb usb1: SerialNumber: 0000:00:1a.7
+[    0.937698 ] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    0.937701 ] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.937703 ] usb usb2: Product: EHCI Host Controller
+[    0.937705 ] usb usb2: Manufacturer: Linux 5.10.56-1-MANJARO ehci_hcd
+[    0.937706 ] usb usb2: SerialNumber: 0000:00:1d.7
+[    0.938665 ] usb usb3: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    0.938668 ] usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.938670 ] usb usb3: Product: UHCI Host Controller
+[    0.938671 ] usb usb3: Manufacturer: Linux 5.10.56-1-MANJARO uhci_hcd
+[    0.938673 ] usb usb3: SerialNumber: 0000:00:1a.0
+[    0.939448 ] usb usb4: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    0.939451 ] usb usb4: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.939453 ] usb usb4: Product: UHCI Host Controller
+[    0.939455 ] usb usb4: Manufacturer: Linux 5.10.56-1-MANJARO uhci_hcd
+[    0.939456 ] usb usb4: SerialNumber: 0000:00:1a.1
+[    0.940194 ] usb usb5: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    0.940198 ] usb usb5: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.940200 ] usb usb5: Product: UHCI Host Controller
+[    0.940202 ] usb usb5: Manufacturer: Linux 5.10.56-1-MANJARO uhci_hcd
+[    0.940204 ] usb usb5: SerialNumber: 0000:00:1d.0
+[    0.940988 ] usb usb6: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    0.940991 ] usb usb6: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.940992 ] usb usb6: Product: UHCI Host Controller
+[    0.940994 ] usb usb6: Manufacturer: Linux 5.10.56-1-MANJARO uhci_hcd
+[    0.940996 ] usb usb6: SerialNumber: 0000:00:1d.1
+[    0.941747 ] usb usb7: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.10
+[    0.941749 ] usb usb7: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.941751 ] usb usb7: Product: UHCI Host Controller
+[    0.941753 ] usb usb7: Manufacturer: Linux 5.10.56-1-MANJARO uhci_hcd
+[    0.941754 ] usb usb7: SerialNumber: 0000:00:1d.2
+[    0.942139 ] usbcore: registered new interface driver usbserial_generic
+[    0.942146 ] usbserial: USB Serial support registered for generic
+[    1.354483 ] usb 5-2: new low-speed USB device number 2 using uhci_hcd
+[    1.538214 ] usb 5-2: New USB device found, idVendor=0000, idProduct=3825, bcdDevice= 1.00
+[    1.538218 ] usb 5-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    1.538220 ] usb 5-2: Product:  USB OPTICAL MOUSE
+[    1.974474 ] usb 2-4: new high-speed USB device number 3 using ehci-pci
+[    2.114956 ] input:  USB OPTICAL MOUSE as
+/devices/pci0000:00/0000:00:1d.0/usb5/5-2/5-2:1.0/0003:0000:3825.0001/input/input6
+[    2.115132 ] hid-generic 0003:0000:3825.0001: input,hidraw0: USB HID v1.11 Mouse [ USB OPTICAL MOUSE ] on
+usb-0000:00:1d.0-2/input0
+[    2.115216 ] usbcore: registered new interface driver usbhid
+[    2.115218 ] usbhid: USB HID core driver
+[    2.160851 ] usb 2-4: New USB device found, idVendor=064e, idProduct=a103, bcdDevice= 5.00
+[    2.160856 ] usb 2-4: New USB device strings: Mfr=2, Product=1, SerialNumber=3
+[    2.160858 ] usb 2-4: Product: Video WebCam
+[    2.160860 ] usb 2-4: Manufacturer: SuYin
+[    2.160862 ] usb 2-4: SerialNumber: CN0314-SN30-OV035-VA-R05.00.00
+[   22.551165 ] usb 4-1: new full-speed USB device number 2 using uhci_hcd
+[   22.712875 ] usb 4-1: device descriptor read/all, error -71
+[   29.170532 ] input: Video WebCam: Video WebCam as /devices/pci0000:00/0000:00:1d.7/usb2/2-4/2-4:1.0/input/input14
+[   29.170682 ] usbcore: registered new interface driver uvcvideo
+[  320.005818 ] usb usb5: root hub lost power or was reset
+[  320.005870 ] usb usb6: root hub lost power or was reset
+[  320.005912 ] usb usb4: root hub lost power or was reset
+[  320.006081 ] usb usb3: root hub lost power or was reset
+[  320.006124 ] usb usb7: root hub lost power or was reset
+[  320.006800 ] usb usb1: root hub lost power or was reset
+[  320.010769 ] usb usb2: root hub lost power or was reset
+[  320.264676 ]  ip6_tables nf_conntrack_netbios_ns nf_conntrack_broadcast nf_nat_ftp nf_nat nf_conntrack_ftp nf_conntrack
+nf_defrag_ipv6 nf_defrag_ipv4 libcrc32c iptable_filter crypto_user drm agpgart fuse ip_tables x_tables ext4 crc32c_generic
+crc16 mbcache jbd2 serio_raw sdhci_pci usbhid cqhci sdhci mmc_core
+[  320.431111 ] usb 2-4: reset high-speed USB device number 3 using ehci-pci
+[  320.561141 ] usb 5-2: reset low-speed USB device number 2 using uhci_hcd
+[  320.681691 ]  ip6_tables nf_conntrack_netbios_ns nf_conntrack_broadcast nf_nat_ftp nf_nat nf_conntrack_ftp nf_conntrack
+nf_defrag_ipv6 nf_defrag_ipv4 libcrc32c iptable_filter crypto_user drm agpgart fuse ip_tables x_tables ext4 crc32c_generic
+crc16 mbcache jbd2 serio_raw sdhci_pci usbhid cqhci sdhci mmc_core
+[13129.540218] usb 1-1: new high-speed USB device number 3 using ehci-pci
+[13129.695269] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[13129.695277] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[13129.695281] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[13129.695284] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[13129.695287] usb 1-1: SerialNumber: 352920045561480
+[13130.435555] usb-storage 1-1:1.0: USB Mass Storage device detected
+[13130.435929] scsi host4: usb-storage 1-1:1.0
+[13130.436089] usbcore: registered new interface driver usb-storage
+[13130.445398] usbcore: registered new interface driver uas
+[13253.943884] usb 1-1: USB disconnect, device number 3
+[13776.709779] usb 1-1: new high-speed USB device number 4 using ehci-pci
+[13776.858504] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[13776.858511] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[13776.858515] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[13776.858518] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[13776.858521] usb 1-1: SerialNumber: 352920045561480
+[13776.862746] usb-storage 1-1:1.0: USB Mass Storage device detected
+[13776.863010] scsi host4: usb-storage 1-1:1.0
+[13814.178675] usb 1-1: USB disconnect, device number 4
+[13829.736457] usb 1-1: new high-speed USB device number 5 using ehci-pci
+[13829.885541] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[13829.885547] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[13829.885549] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[13829.885551] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[13829.885553] usb 1-1: SerialNumber: 352920045561480
+[13829.889368] usb-storage 1-1:1.0: USB Mass Storage device detected
+[13829.909856] scsi host4: usb-storage 1-1:1.0
+[17508.015599] usb 1-1: USB disconnect, device number 5
+[17524.882747] usb 1-1: new high-speed USB device number 6 using ehci-pci
+[17525.031545] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[17525.031551] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[17525.031555] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[17525.031558] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[17525.031561] usb 1-1: SerialNumber: 352920045561480
+[17525.034918] usb-storage 1-1:1.0: USB Mass Storage device detected
+[17525.037138] scsi host4: usb-storage 1-1:1.0
+[17525.712853] usb 1-1: USB disconnect, device number 6
+[17526.086067] usb 1-1: new high-speed USB device number 7 using ehci-pci
+[17526.238217] usb 1-1: New USB device found, idVendor=05c6, idProduct=6000, bcdDevice= 0.00
+[17526.238225] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[17526.238229] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[17526.238232] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[17526.238235] usb 1-1: SerialNumber: 352920045561480
+[17526.243154] usb-storage 1-1:1.4: USB Mass Storage device detected
+[17526.243425] scsi host4: usb-storage 1-1:1.4
+[17527.116558] usbcore: registered new interface driver option
+[17527.116787] usbserial: USB Serial support registered for GSM modem (1-port)
+[17527.118645] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[17527.119586] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[17527.120280] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[17527.121011] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[17527.361872] audit: type=1130 audit(1630324536.294:240): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[17527.361882] audit: type=1131 audit(1630324536.294:241): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[18255.241292] usb 1-1: USB disconnect, device number 7
+[18403.246011] usb 1-1: new high-speed USB device number 8 using ehci-pci
+[18403.401521] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[18403.401526] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[18403.401529] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[18403.401531] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[18403.401533] usb 1-1: SerialNumber: 352920045561480
+[18403.405115] usb-storage 1-1:1.0: USB Mass Storage device detected
+[18403.405995] scsi host4: usb-storage 1-1:1.0
+[18404.091719] usb 1-1: USB disconnect, device number 8
+[18404.459331] usb 1-1: new high-speed USB device number 9 using ehci-pci
+[18404.608072] usb 1-1: New USB device found, idVendor=05c6, idProduct=6000, bcdDevice= 0.00
+[18404.608079] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[18404.608082] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[18404.608085] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[18404.608088] usb 1-1: SerialNumber: 352920045561480
+[18404.610745] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[18404.611108] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[18404.611450] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[18404.611757] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[18404.611918] usb-storage 1-1:1.4: USB Mass Storage device detected
+[18404.615465] scsi host4: usb-storage 1-1:1.4
+[18405.746112] audit: type=1130 audit(1630325414.679:250): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[18405.746123] audit: type=1131 audit(1630325414.679:251): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[18728.523751] usb 1-1: USB disconnect, device number 9
+[18899.052597] usb 1-1: new high-speed USB device number 10 using ehci-pci
+[18899.201485] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[18899.201490] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[18899.201493] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[18899.201495] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[18899.201497] usb 1-1: SerialNumber: 352920045561480
+[18899.204635] usb-storage 1-1:1.0: USB Mass Storage device detected
+[18899.207282] scsi host4: usb-storage 1-1:1.0
+[18899.835562] usb 1-1: USB disconnect, device number 10
+[18900.199258] usb 1-1: new high-speed USB device number 11 using ehci-pci
+[18900.351529] usb 1-1: New USB device found, idVendor=05c6, idProduct=6000, bcdDevice= 0.00
+[18900.351535] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[18900.351538] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[18900.351540] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[18900.351542] usb 1-1: SerialNumber: 352920045561480
+[18900.355615] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[18900.356422] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[18900.356680] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[18900.357935] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[18900.358063] usb-storage 1-1:1.4: USB Mass Storage device detected
+[18900.373868] scsi host4: usb-storage 1-1:1.4
+[18901.440890] audit: type=1130 audit(1630325910.374:252): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[18901.440903] audit: type=1131 audit(1630325910.374:253): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[18902.295943] usb 1-1: USB disconnect, device number 11
+[18922.899273] usb 1-1: new high-speed USB device number 12 using ehci-pci
+[18923.047971] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[18923.047978] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[18923.047982] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[18923.047985] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[18923.047988] usb 1-1: SerialNumber: 352920045561480
+[18923.051740] usb-storage 1-1:1.0: USB Mass Storage device detected
+[18923.053514] scsi host4: usb-storage 1-1:1.0
+[18923.651531] usb 1-1: USB disconnect, device number 12
+[18924.015933] usb 1-1: new high-speed USB device number 13 using ehci-pci
+[18924.165426] usb 1-1: New USB device found, idVendor=05c6, idProduct=6000, bcdDevice= 0.00
+[18924.165437] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[18924.165441] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[18924.165444] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[18924.165447] usb 1-1: SerialNumber: 352920045561480
+[18924.168387] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[18924.169199] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[18924.169512] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[18924.170886] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[18924.171023] usb-storage 1-1:1.4: USB Mass Storage device detected
+[18924.185944] scsi host4: usb-storage 1-1:1.4
+[18925.219659] audit: type=1130 audit(1630325934.154:254): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[18925.220835] audit: type=1131 audit(1630325934.154:255): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[19195.167694] usb 1-1: USB disconnect, device number 13
+[19223.169488] usb 1-1: new high-speed USB device number 14 using ehci-pci
+[19223.318297] usb 1-1: New USB device found, idVendor=05c6, idProduct=f000, bcdDevice= 0.00
+[19223.318303] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[19223.318305] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[19223.318307] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[19223.318309] usb 1-1: SerialNumber: 352920045561480
+[19223.322655] usb-storage 1-1:1.0: USB Mass Storage device detected
+[19223.339269] scsi host4: usb-storage 1-1:1.0
+[19224.118492] usb 1-1: USB disconnect, device number 14
+[19224.489301] usb 1-1: new high-speed USB device number 15 using ehci-pci
+[19224.638843] usb 1-1: New USB device found, idVendor=05c6, idProduct=6000, bcdDevice= 0.00
+[19224.638849] usb 1-1: New USB device strings: Mfr=3, Product=2, SerialNumber=4
+[19224.638851] usb 1-1: Product: Qualcomm CDMA Technologies MSM
+[19224.638853] usb 1-1: Manufacturer: Qualcomm, Incorporated
+[19224.638855] usb 1-1: SerialNumber: 352920045561480
+[19224.641601] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[19224.642860] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[19224.643217] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[19224.644669] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[19224.644810] usb-storage 1-1:1.4: USB Mass Storage device detected
+[19224.662684] scsi host4: usb-storage 1-1:1.4
+[19225.775410] audit: type=1130 audit(1630326234.707:259): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[19225.775769] audit: type=1131 audit(1630326234.707:260): pid=1 uid=0 auid=4294967295 ses=4294967295 subj==unconfined
+msg='unit=usb_modeswitch@1-1 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+```
+
+## Output ke 2
+```bash
+❯ sudo dmesg| grep tty
+[sudo] password for dar729:
+[    0.150874] printk: console [tty0] enabled
+[    9.537091] systemd[1]: Created slice system-getty.slice.
+[   51.629410] audit: type=1006 audit(1630298237.114:91): pid=719 uid=0 subj==unconfined old-auid=4294967295 auid=971 tty=(none) old-ses=4294967295 ses=1 res=1
+[   72.514756] audit: type=1006 audit(1630298258.000:111): pid=868 uid=0 subj==unconfined old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=2 res=1
+[17527.118645] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[17527.119586] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[17527.120280] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[17527.121011] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[18255.241684] option1 ttyUSB0: GSM modem (1-port) converter now disconnected from ttyUSB0
+[18255.244766] option1 ttyUSB1: GSM modem (1-port) converter now disconnected from ttyUSB1
+[18255.245318] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
+[18255.245678] option1 ttyUSB3: GSM modem (1-port) converter now disconnected from ttyUSB3
+[18404.610745] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[18404.611108] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[18404.611450] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[18404.611757] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[18728.524095] option1 ttyUSB0: GSM modem (1-port) converter now disconnected from ttyUSB0
+[18728.524637] option1 ttyUSB1: GSM modem (1-port) converter now disconnected from ttyUSB1
+[18728.524982] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
+[18728.525272] option1 ttyUSB3: GSM modem (1-port) converter now disconnected from ttyUSB3
+[18900.355615] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[18900.356422] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[18900.356680] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[18900.357935] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[18902.296287] option1 ttyUSB0: GSM modem (1-port) converter now disconnected from ttyUSB0
+[18902.296613] option1 ttyUSB1: GSM modem (1-port) converter now disconnected from ttyUSB1
+[18902.296925] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
+[18902.297219] option1 ttyUSB3: GSM modem (1-port) converter now disconnected from ttyUSB3
+[18924.168387] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[18924.169199] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[18924.169512] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[18924.170886] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+[19195.168085] option1 ttyUSB0: GSM modem (1-port) converter now disconnected from ttyUSB0
+[19195.168688] option1 ttyUSB1: GSM modem (1-port) converter now disconnected from ttyUSB1
+[19195.169096] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
+[19195.171847] option1 ttyUSB3: GSM modem (1-port) converter now disconnected from ttyUSB3
+[19224.641601] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB0
+[19224.642860] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB1
+[19224.643217] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB2
+[19224.644669] usb 1-1: GSM modem (1-port) converter now attached to ttyUSB3
+```
